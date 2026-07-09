@@ -340,23 +340,16 @@ img { display: block; max-width: 100%; }
 .step-title { font-size: 21px; font-weight: 800; margin-bottom: 10px; }
 .step-body { font-size: 14.5px; line-height: 1.65; color: var(--muted); }
 
-.screenshot-placeholder {
-  height: 420px;
+.product-screenshot {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: repeating-linear-gradient(-45deg, var(--lavender-bg) 0 14px, var(--white) 14px 28px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.screenshot-placeholder span {
-  font-family: ui-monospace, Menlo, monospace;
-  font-size: 12px;
-  color: #8B8697;
-  background: var(--white);
-  border: 1px solid var(--border);
-  padding: 8px 14px;
-  border-radius: 8px;
+  background: var(--dark);
 }
 
 /* Use cases */
@@ -667,7 +660,7 @@ img { display: block; max-width: 100%; }
   .how-it-works { padding: 40px 20px; }
   .section-title { font-size: 26px; margin-bottom: 22px; }
   .steps-grid { grid-template-columns: 1fr; gap: 18px; margin-bottom: 32px; }
-  .screenshot-placeholder { height: 220px; }
+  .product-screenshot { max-height: 220px; }
 
   .use-cases { padding: 8px 20px 40px; }
   .use-cases-grid { grid-template-columns: 1fr; gap: 14px; }
