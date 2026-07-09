@@ -508,9 +508,9 @@ img { display: block; max-width: 100%; }
 
 .tier-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 1080px;
+  max-width: 860px;
   margin: 0 auto;
 }
 .tier-card {
@@ -541,7 +541,6 @@ img { display: block; max-width: 100%; }
 .tier-name { font-size: 15px; font-weight: 800; margin-bottom: 10px; }
 .tier-price { display: flex; align-items: baseline; justify-content: center; gap: 8px; margin-bottom: 16px; }
 .tier-price-new { font-size: 28px; font-weight: 800; letter-spacing: -.02em; }
-.tier-price-old { font-size: 14px; color: var(--muted-2); text-decoration: line-through; }
 .tier-cta { display: block; width: 100%; }
 .tier-lifetime { font-size: 11.5px; color: var(--muted); margin: 10px 0 20px; }
 .tier-meta { display: flex; flex-direction: column; gap: 8px; text-align: left; border-top: 1px solid var(--border); padding-top: 16px; font-size: 13px; }
@@ -618,8 +617,6 @@ img { display: block; max-width: 100%; }
   .wall-col:last-child { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; }
   .wall-col:last-child .wall-card { flex: 1 1 260px; }
   .nav-links { display: none; }
-  .tier-grid { grid-template-columns: repeat(2, 1fr); }
-  .tier-card-recommended { grid-column: span 2; }
 }
 
 /* ===== Mobile ===== */
